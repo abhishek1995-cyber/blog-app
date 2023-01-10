@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* my reset */
+
+*{
+    box-sizing: border-box;
+}
+
+.active {
+    color: black;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 2rem;
+    color: green;
+}
+#navlink {
+    text-decoration: none;
+   
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Header */
+
+.header {
+    padding: 2rem 0;
+ 
+}
+
+/* sign-in-up */
+
+.sign {
+    text-align: center;
+    line-height: 3rem;
+    width: 40%;
+    margin: 0 auto;
+}
+.sign-heading {
+    font-size: 3rem;
+}
+.sign-link {
+    color: green;
+    text-decoration: none;
+}
+.sign-link:hover {
+    text-decoration: underline;
+}
+
+.sign-form {
+ display: flex;
+ flex-direction: column;  
+   
+}
+
+.sign-input {
+    font-size: 1.5rem;
+   border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.sign-button {
+    display: flex;
+    justify-content: flex-end;
+}
+.sign-btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+/* hero */
+
+.hero {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: white;
+    background-color: gray;
+    line-height: 3rem;
+}
+
+.hero-h1 {
+    font-size: 2.5rem;
+
+}
+.hero-h2 {
+    font-size: 2rem;
+
+}
+
+/* article */
+
+.main {
+    margin-top: 2rem;
+}
+.articles {
+    flex: 0 1 78%;
+}
+
+.feed {
+    font-size: 1.5rem;
+    color: green;
+}
+strong {
+    border-bottom: 1px solid green;
+}
+
+.article-box{
+    padding: 1rem 0;
+   
+}
+.article-box1{
+    padding-bottom: 1.5rem;
+   
+}
+.username{
+    color: green;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+figure{
+    margin-right: 5px;
+}
+
+.username:hover{
+    color: green;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.article {
+    text-decoration: none;
+   
+}
+.title {
+    font-size: 2rem;
+    color: black;
+}
+.description {
+    color: grey;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.read-more {
+    color: grey;
+}
+.tag-list{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0.2rem;
+    margin-left: 0.3rem;
+    color: grey;
+}
+/* tag */
+
+.tag {
+    flex: 0 1 18%;
+    padding: 1rem;
+    height: 13rem;
+    background-color: rgb(217, 213, 213);
+}
+.tag-btn {
+    margin-right: 5px;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    padding: 0.2rem 0.3rem;
+
+}
